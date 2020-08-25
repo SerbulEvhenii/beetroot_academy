@@ -57,3 +57,4 @@ start2 = datetime.now()
 
 print(bin_sum(2,7))
 print(datetime.now() - start2)
+
