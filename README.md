@@ -1,1 +1,2 @@
-# beetroot_academy
+# Course Python "Beetroot Academy"
+Домашняя и рабочая работа
