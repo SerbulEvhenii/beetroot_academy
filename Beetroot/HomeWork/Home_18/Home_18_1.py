@@ -6,8 +6,3 @@ areaRectangle(5,10)
 
 print('\nHome Work 18.2')
 print(sys.path)
-
-
-print('\nHome Work 18.3')
-with open('for_Home_18.txt', 'r') as file:
-    print(file.readline())

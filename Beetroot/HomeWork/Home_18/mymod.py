@@ -1,3 +1,12 @@
+# Я не понял в задании следующее:
+# Test your module interactively, using import and name qualification to fetch your exports.
+# Does your PYTHONPATH need to include the directory where you created mymod.py?
+# Try running your module on itself: e.g., test("mymod.py"). Note that the test opens the file twice;
+# if you’re feeling ambitious, you may be able to improve this by passing an open file object into the two count
+# functions (hint: file.seek(0) is a file rewind).
+
+print('Home Work 18.3')
+
 def count_lines(name):
     with open(name, 'r') as file:
         list_words = file.read().split()
