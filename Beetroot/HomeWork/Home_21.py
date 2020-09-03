@@ -1,5 +1,3 @@
-from typing import Optional
-
 print('Home Work 21.1')
 
 def to_power(x, exp: int):
@@ -10,10 +8,10 @@ def to_power(x, exp: int):
     else:
         return x * (to_power(x, exp - 1))
 
+print(to_power(3, 3))
 
-print(to_power(5, -1))
+
 print('\nHome Work 21.2')
-
 def is_palindrome(looking_str: str, index: int = 0) -> bool:
     if len(looking_str) == 1:
         return True
@@ -24,41 +22,36 @@ def is_palindrome(looking_str: str, index: int = 0) -> bool:
     else:
         return False
 
-
-
 print(is_palindrome('bbaassaabb'))
-print('\nHome Work 21.3')
 
+
+print('\nHome Work 21.3')
 def mult(a: int, n: int) -> int:
-    pass
+    if n < 0:
+        return 'This function works only with positive integers'
+    elif n == 1:
+        return a
+    else:
+        multy = 0
+        multy = multy + a
+        return multy + (mult(a, n - 1))
+
+print(mult(100, 4))
+
 
 print('\nHome Work 21.4')
 def reverse(str):
     list_word = list(str)
     letter = ''
-    # print(list_word)
-    if len(list_word) > 1:
-        letter = letter + list_word.pop(-1)
-        # print(list_word)
-        new_str = ''.join(list_word)
-        # print(new_str)
+    if len(str) == 1:
+        return str
     else:
-        letter = letter + list_word.pop(1)
-    print(letter)
-    return letter + reverse(new_str)
+        letter += list_word.pop(-1)
+        new_str = ''.join(list_word)
+        return letter + reverse(new_str)
 
+print(reverse('Evhenii'))
 
-    # s = s + str[-1::]
-    # return s
-    # if len(str) == 1:
-    #     return str
-    # else:
-    #     reverse_str = ''
-    #     reverse_str += str[-1]
-    #     return reverse(reverse_str)
-
-
-# print(reverse('hello'))
 
 print('\nHome Work 21.5')
 def sum_of_digits(digit_string: str) -> int:
